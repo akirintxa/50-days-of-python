@@ -13,7 +13,7 @@ def hide_password():
     print(f"{hidden_passw} the password is {len(passw)} characters long.")
 
 
-# hide_password()
+hide_password()
 
 """ PART 2
 Extra Challenge: A Thousand Separator
@@ -45,7 +45,7 @@ def convert_numbers(num_list):
 
         # Paso 5: Iterar sobre cada dígito del número y agregar comas cada tres dígitos
         for i in range(len(numero_str)):
-            if i % 3 == 0 """ and i != 0 """:
+            if i % 3 == 0 and i != 0:
                 numero_formateado += ","
             numero_formateado += numero_str[i]
 
@@ -59,6 +59,7 @@ def convert_numbers(num_list):
     return numeros_formateados
 
 
-# Ejemplo de uso
+# *** Testing the function ***
+print('--- PART 2 ---')
 lista = [1000000, 23569891287, 2354672, 9878098]
 print('convert_numbers: ', convert_numbers(lista))
